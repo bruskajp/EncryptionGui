@@ -5,15 +5,20 @@
 using namespace std;
 
 class Display {
-public:
-    int name;
-private:
-    int id;
+    public:
+        int name;
+    private:
+        int id;
 };
 
+Display display;
+
 int main(){
-    cout << "eat fish";
-    cout << "tuna or salmon";
-    cout << "eat winnning";
+
+    display.name = 2;
+
+    cout << "eat fish\n";
+    cout << "tuna or salmon\n";
+    cout << display.name << "\n";
     return 0;
 }
