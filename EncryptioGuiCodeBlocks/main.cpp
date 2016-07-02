@@ -1,24 +1,18 @@
+/* Encryption / Decryption / Cryptanalysis Software
+   James Bruska and Michael Lee
+   Project Created: 07/01/2016 */
+
 #include <iostream>
 #include <windows.h>
 #include <math.h>
 
+#include <caesarCipher.h>
+
 using namespace std;
-
-class Display {
-    public:
-        int name;
-    private:
-        int id;
-};
-
-Display display;
 
 int main(){
 
-    display.name = 2;
-
-    cout << "eat fish\n";
-    cout << "tuna or salmon\n";
-    cout << display.name << "\n";
+    CaesarCipher caesarCipher;
+    int test = caesarCipher.encrypt();
     return 0;
 }
