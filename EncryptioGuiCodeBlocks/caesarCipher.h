@@ -4,6 +4,6 @@ using namespace std;
 
 class CaesarCipher{
     public:
-        int encrypt(string,string&,string);
-        int decrypt(string&,string,string);
+        int encrypt(const string &,string &,const int &);
+        int decrypt(string &,const string &,const int &);
 };

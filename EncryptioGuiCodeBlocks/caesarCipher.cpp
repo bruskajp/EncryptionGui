@@ -4,8 +4,8 @@
 
 using namespace std;
 
-int CaesarCipher::encrypt(string plaintext,string &ciphertext,string keyword){
-    ciphertext = plaintext + keyword;
+int CaesarCipher::encrypt(const string & plaintext,string & ciphertext,const int & keyword){
+    //ciphertext = plaintext
     return 0;
 };
 

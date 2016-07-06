@@ -13,11 +13,10 @@ using namespace std;
 int main(){
 
     CaesarCipher caesarCipher;
-    plaintext = "this is the plaintext";
-    ciphertext = "this is the ciphertext";
-    keyword = " and it's modified!\n";
-    int test = caesarCipher.encrypt(plaintext,ciphertext,keyword);
+    string plaintext = "this is the plaintext";
+    string ciphertext = "this is the ciphertext";
+    int keynumber = 2;
+    int test = caesarCipher.encrypt(plaintext,ciphertext,keynumber);
     cout << test << endl;
-    cout << caesarCipher.ciphertext << endl;
     return 0;
 }
