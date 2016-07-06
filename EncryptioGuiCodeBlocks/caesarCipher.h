@@ -7,6 +7,6 @@ class CaesarCipher{
         string plaintext;
         string ciphertext;
         string keyword;
-        int encrypt(string,&string,string);
-        int decrypt(&string,string,string);
+        int encrypt(string,string&,string);
+        int decrypt(string&,string,string);
 };
