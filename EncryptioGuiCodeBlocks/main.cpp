@@ -12,16 +12,12 @@ using namespace std;
 
 int main(){
 
-    char a = 'a';
-    cout << (int) a << '\n';
-    cout << ((int) a) + 1 << '\n';
-    cout << (char)(((int) a) + 1) << '\n' << '\n';
-
     CaesarCipher caesarCipher;
-    string plaintext = "this is the plaintext";
-    string ciphertext = "this is the ciphertext";
-    int keynumber = 2;
+    string plaintext = "Abc Xyz";
+    string ciphertext = "";
+    int keynumber = 1;
     int test = caesarCipher.encrypt(plaintext,ciphertext,keynumber);
     cout << test << endl;
+    cout << ciphertext << endl;
     return 0;
 }
