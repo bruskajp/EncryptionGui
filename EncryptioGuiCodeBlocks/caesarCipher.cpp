@@ -4,10 +4,8 @@
 
 using namespace std;
 
-int CaesarCipher::encrypt(){
-    cout << "I encrypted the thing: ";
-    output = "fdsa;lf;naocn";
-    cout << output << "\n";
+int CaesarCipher::encrypt(string plaintext,string &ciphertext,string keyword){
+    ciphertext = plaintext + keyword;
     return 0;
 };
 
