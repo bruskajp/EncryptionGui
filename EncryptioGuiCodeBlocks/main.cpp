@@ -12,6 +12,11 @@ using namespace std;
 
 int main(){
 
+    char a = 'a';
+    cout << (int) a << '\n';
+    cout << ((int) a) + 1 << '\n';
+    cout << (char)(((int) a) + 1) << '\n' << '\n';
+
     CaesarCipher caesarCipher;
     string plaintext = "this is the plaintext";
     string ciphertext = "this is the ciphertext";
