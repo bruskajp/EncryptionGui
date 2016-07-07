@@ -19,5 +19,9 @@ int main(){
     int test = caesarCipher.encrypt(plaintext,ciphertext,keynumber);
     cout << test << endl;
     cout << ciphertext << endl;
+    plaintext = "";
+    int test2 = caesarCipher.decrypt(plaintext,ciphertext,keynumber);
+    cout << test2 << endl;
+    cout << plaintext << endl;
     return 0;
 }
