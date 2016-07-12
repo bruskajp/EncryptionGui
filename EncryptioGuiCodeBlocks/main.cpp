@@ -7,6 +7,12 @@
 #include <math.h>
 
 #include "caesarCipher.h"
+#include "columnarTransCipher.h"
+#include "fourSquareCipher.h"
+#include "hillCipher.h"
+#include "playfairCipher.h"
+#include "railFenceCipher.h"
+#include "vigenereCipher.h"
 
 using namespace std;
 

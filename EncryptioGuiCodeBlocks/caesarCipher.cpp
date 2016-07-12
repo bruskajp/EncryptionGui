@@ -4,12 +4,12 @@
 
 using namespace std;
 
-int CaesarCipher::encrypt(const string & plaintext,string & ciphertext,const int & keyword){
+int CaesarCipher::encrypt(const string & plaintext,string & ciphertext,const int & keynumber){
     if (!plaintext.compare("")) {
         return 1;
     }
 
-    int keyTemp = keyword % 26;
+    int keyTemp = keynumber % 26;
     string plainTemp = plaintext;
 
     for (int i = 0; i < plaintext.length(); i++) {
@@ -32,12 +32,12 @@ int CaesarCipher::encrypt(const string & plaintext,string & ciphertext,const int
     return 0;
 };
 
-int CaesarCipher::decrypt(string & plaintext,const string & ciphertext,const int & keyword){
+int CaesarCipher::decrypt(string & plaintext,const string & ciphertext,const int & keynumber){
     if (!ciphertext.compare("")) {
         return 1;
     }
 
-    int keyTemp = 26 - (keyword % 26);
+    int keyTemp = 26 - (keynumber % 26);
     string cipherTemp = ciphertext;
 
     for (int i = 0; i < ciphertext.length(); i++) {

@@ -33,7 +33,19 @@
 		</Compiler>
 		<Unit filename="caesarCipher.cpp" />
 		<Unit filename="caesarCipher.h" />
+		<Unit filename="columnarTransCipher.cpp" />
+		<Unit filename="columnarTransCipher.h" />
+		<Unit filename="fourSquareCipher.cpp" />
+		<Unit filename="fourSquareCipher.h" />
+		<Unit filename="hillCipher.cpp" />
+		<Unit filename="hillCipher.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="playfairCipher.cpp" />
+		<Unit filename="playfairCipher.h" />
+		<Unit filename="railFenceCipher.cpp" />
+		<Unit filename="railFenceCipher.h" />
+		<Unit filename="vigenereCipher.cpp" />
+		<Unit filename="vigenereCipher.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
