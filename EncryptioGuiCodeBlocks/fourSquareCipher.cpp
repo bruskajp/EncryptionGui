@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int FourSquareCipher::encrypt(const string & plaintext,string & ciphertext,const string & keyword1,const string & keyword2){
+int FourSquareCipher::encrypt(const string & plaintext,string & ciphertext,const string & keyword1, const string & keyword2){
     if (!plaintext.compare("")) {
         return 1;
     }
@@ -16,7 +16,7 @@ int FourSquareCipher::encrypt(const string & plaintext,string & ciphertext,const
     return 0;
 };
 
-int FourSquareCipher::decrypt(string & plaintext,const string & ciphertext,const int & keyword){
+int FourSquareCipher::decrypt(string & plaintext,const string & ciphertext,const string & keyword1, const string & keyword2){
     if (!ciphertext.compare("")) {
         return 1;
     }

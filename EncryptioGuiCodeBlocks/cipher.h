@@ -4,6 +4,6 @@ using namespace std;
 
 class Cipher{
     protected:
-        int encyptionErrorChecking(const string & plaintext);
-        int decyptionErrorChecking(const string & ciphertext);
+        int encryptionErrorChecking(const string & plaintext);
+        int decryptionErrorChecking(const string & ciphertext);
 };

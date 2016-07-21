@@ -20,7 +20,7 @@ int ColumnarTransCipher::decrypt(string & plaintext,const string & ciphertext,co
         return 1;
     }
 
-    string keyTemp = keyword);
+    string keyTemp = keyword;
     string cipherTemp = ciphertext;
 
     return 0;

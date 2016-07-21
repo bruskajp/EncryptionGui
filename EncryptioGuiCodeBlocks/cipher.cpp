@@ -1,15 +1,16 @@
 #include <string>
+#include "cipher.h"
 
 using namespace std;
 
-int Cipher::encyptionErrorChecking(const string & plaintext){
+int Cipher::encryptionErrorChecking(const string & plaintext){
     if (!plaintext.compare("")) {
         return 1;
     }
 }
 
-int Cipher::decyptionErrorChecking(const string & ciphertext){
-    if (!plaintext.compare("")) {
+int Cipher::decryptionErrorChecking(const string & ciphertext){
+    if (!ciphertext.compare("")) {
         return 1;
     }
 }
