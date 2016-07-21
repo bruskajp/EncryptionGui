@@ -5,9 +5,7 @@
 using namespace std;
 
 int CaesarCipher::encrypt(const string & plaintext,string & ciphertext,const int & keynumber){
-    if (!plaintext.compare("")) {
-        return 1;
-    }
+    int error = Cipher::encryptionErrorChecking(plaintext);
 
     int keyTemp = keynumber % 26;
     string plainTemp = plaintext;
