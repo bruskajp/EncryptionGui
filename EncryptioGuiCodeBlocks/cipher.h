@@ -1,9 +1,9 @@
 #include <string>
+#include "padding.h"
 
 using namespace std;
 
 class Cipher{
     protected:
-        int encryptionErrorChecking(const string & plaintext);
-        int decryptionErrorChecking(const string & ciphertext);
+        Padding padding;
 };
