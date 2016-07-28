@@ -42,6 +42,8 @@
 		<Unit filename="hillCipher.cpp" />
 		<Unit filename="hillCipher.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="padding.cpp" />
+		<Unit filename="padding.h" />
 		<Unit filename="playfairCipher.cpp" />
 		<Unit filename="playfairCipher.h" />
 		<Unit filename="railFenceCipher.cpp" />

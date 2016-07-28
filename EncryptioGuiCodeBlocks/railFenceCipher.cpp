@@ -6,11 +6,11 @@
 using namespace std;
 
 int RailFenceCipher::encrypt(const string & plaintext,string & ciphertext,const int & keynumber){
-    //int error = encryptionErrorChecking(plaintext,ciphertext,keyword);
+    int error = encryptionErrorChecking(plaintext,ciphertext,keyword);
 
-    /*if (error != 0) {
+    if (error != 0) {
         return 1;
-    }*/
+    }
 
     int keyTemp = keynumber % plaintext.length();
     list<string> substrings;
