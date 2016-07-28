@@ -18,16 +18,16 @@ using namespace std;
 
 int main(){
 
-    CaesarCipher caesarCipher;
-    string plaintext = "Abc Xyz";
+    RailFenceCipher railFenceCipher;
+    string plaintext = "ABCDCBABCDCBABCDCBABCDCBA";
     string ciphertext = "";
-    int keynumber = 1;
-    int test = caesarCipher.encrypt(plaintext,ciphertext,keynumber);
+    int keynumber = 4;
+    int test = railFenceCipher.encrypt(plaintext,ciphertext,keynumber);
     cout << test << endl;
     cout << ciphertext << endl;
-    plaintext = "";
-    int test2 = caesarCipher.decrypt(plaintext,ciphertext,keynumber);
-    cout << test2 << endl;
-    cout << plaintext << endl;
+    //plaintext = "";
+    //int test2 = caesarCipher.decrypt(plaintext,ciphertext,keynumber);
+    //cout << test2 << endl;
+    //cout << plaintext << endl;
     return 0;
 }

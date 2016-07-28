@@ -33,6 +33,8 @@
 		</Compiler>
 		<Unit filename="caesarCipher.cpp" />
 		<Unit filename="caesarCipher.h" />
+		<Unit filename="cipher.cpp" />
+		<Unit filename="cipher.h" />
 		<Unit filename="columnarTransCipher.cpp" />
 		<Unit filename="columnarTransCipher.h" />
 		<Unit filename="fourSquareCipher.cpp" />
