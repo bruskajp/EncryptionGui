@@ -24,19 +24,18 @@ int RailFenceCipher::encrypt(const string & plaintext,string & ciphertext,const 
     for (int i = 0; i < plaintext.length(); i++) {
 
         *iter = *iter + plaintext[i];
-
         if (interval == keyTemp) {increasing = false;}
-        else {increasing = true;}
+        else if (interval == 1) {increasing = true;}
 
         if (increasing) {interval += 1; iter++;}
         else {interval -= 1; iter--;}
     }
 
-    iter = substrings.end();
+    iter = substrings.begin();
     ciphertext = *iter;
-    for (int i = keyTemp - 1;i > 0;i--) {
-        iter--;
-        ciphertext = *iter + ciphertext;
+    for (int i = 1; i < keyTemp; i++) {
+        iter++;
+        ciphertext = ciphertext + *iter;
     }
 
     return 0;

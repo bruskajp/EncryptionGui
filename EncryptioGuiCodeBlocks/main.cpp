@@ -19,7 +19,7 @@ using namespace std;
 int main(){
 
     RailFenceCipher railFenceCipher;
-    string plaintext = "ABCDCBABCDCBABCDCBABCDCBA";
+    string plaintext = "ABCDCBABCDCBABCDCBABC";
     string ciphertext = "";
     int keynumber = 4;
     int test = railFenceCipher.encrypt(plaintext,ciphertext,keynumber);
