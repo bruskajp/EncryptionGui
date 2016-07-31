@@ -7,7 +7,7 @@ class BytePadding{
         void iso10126(string & text);
 };
 
-class Padding{
+class Padding: protected Cipher{
     public:
         BytePadding bytePadding;
 };

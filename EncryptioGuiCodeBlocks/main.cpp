@@ -19,15 +19,16 @@ using namespace std;
 int main(){
 
     RailFenceCipher railFenceCipher;
-    string plaintext = "ABCDCBABCDCBABCDCBABC";
+    string plaintext = "DEFENDTHECASTLE";
     string ciphertext = "";
     int keynumber = 4;
     int test = railFenceCipher.encrypt(plaintext,ciphertext,keynumber);
     cout << test << endl;
+    cout << plaintext << endl;
     cout << ciphertext << endl;
-    //plaintext = "";
-    //int test2 = caesarCipher.decrypt(plaintext,ciphertext,keynumber);
-    //cout << test2 << endl;
-    //cout << plaintext << endl;
+    plaintext = "";
+    test = railFenceCipher.decrypt(plaintext,ciphertext,keynumber);
+    cout << test << endl;
+    cout << plaintext << endl;
     return 0;
 }
