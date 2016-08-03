@@ -1,5 +1,4 @@
 #include "caesarCipher.h"
-
 #include <iostream>
 
 using namespace std;
