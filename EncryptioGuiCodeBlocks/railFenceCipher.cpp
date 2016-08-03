@@ -55,7 +55,8 @@ int RailFenceCipher::decrypt(string & plaintext,const string & ciphertext,const 
     }
     list<string>::iterator iter = substrings.begin();
 
-    int counters[keyTemp] = {0};
+    int counters[keyTemp];
+    for (int i = 0; i < keyTemp; i++) {counters[i] = 0;}
     int interval = 1;
     bool increasing = true;
     for (int i = 0; i < ciphertext.length(); i++) {
