@@ -23,7 +23,12 @@ int RailFenceCipher::encrypt(const string & plaintext,string & ciphertext,const 
     bool increasing = true;
     for (int i = 0; i < plaintext.length(); i++) {
 
-        *iter = *iter + plaintext[i];
+        if ((int) plaintext[i] >= 97 && (int) plaintext[i] <= 122) {
+            char char_temp = (char) plaintext[i] - 32;
+            *iter = *iter + char_temp;
+        }
+        else {*iter = *iter + plaintext[i];}
+
         if (interval == keyTemp) {increasing = false;}
         else if (interval == 1) {increasing = true;}
 
